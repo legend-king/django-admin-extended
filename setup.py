@@ -1,6 +1,7 @@
 import os
 from setuptools import find_packages, setup
 
+VERSION = '5.0'
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
@@ -9,15 +10,15 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-admin-extended',
-    version='3.2.1',
+    version=VERSION,
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
     description='Enhance UI/UX of django admin',
     long_description=README,
-    url='https://github.com/cuongnb14/django-admin-extended',
-    author='Cuong Nguyen',
-    author_email='cuongnb14@gmail.com',
+    url='https://github.com/legend-king/django-admin-extended',
+    author='Mustafa',
+    author_email='mustafakhorakiwala53@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
